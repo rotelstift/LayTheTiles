@@ -4,8 +4,7 @@ services:
     build: .
     ports:
       - "4200:4200"
-      - "9876:9876"
     volumes:
       - ".:/projects"
     tty: true
-    command: /bin/bash
+    command: /bin/bash -c "ng serve --host 0.0.0.0"
